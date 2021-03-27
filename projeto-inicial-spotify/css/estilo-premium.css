@@ -10,6 +10,7 @@ nav.navbar-transparente{
 }
 .navbar-light .navbar-nav .nav-link{
     color:white;
+    font-weight: bold;
 }
 .navbar-light .navbar-nav .nav-link:hover{
     color:#1ED760;
@@ -44,12 +45,12 @@ nav.navbar-transparente{
 }
 .btn-custom{
     color:white;
+    font-weight: bold;
+    font-size: 1em;
     border-radius: 500px;
     -webkit-border-radius: 500px;
     -moz-border-radius: 500px;
     text-transform: uppercase;
-    transition: background 0.4s, color 0.4s;
-    padding: 10px 20px;
 }
 .btn-black{
     background-color: rgb(26, 25, 25);
@@ -57,7 +58,7 @@ nav.navbar-transparente{
 }
 .btn-black:hover{
     background-color: black;
-    color: white;
+    color:#1ED760;
 }
 .btn-bege{
     background-color:#FAC95C;
@@ -67,7 +68,7 @@ nav.navbar-transparente{
 .btn-bege:hover{
     background-color:#FBD175;
     padding: 8px 40px 8px 40px;
-    color: black;
+    color:#1ED760;
 }
 .title-premium{
     font-weight: bold;
@@ -91,7 +92,7 @@ h3{
 }
 .background-cards{
     background-color: #EFEFEF;
-    height: 500px;
+    height:100%;
     margin-top: 50px;
 }
 .subtitulo p{
@@ -106,6 +107,123 @@ h3{
 #cartoes ul li{
     display: inline-block;
     padding-left: 10px;
+}
+.card{
+    border-radius:10px;
+    z-index:1;
+}
+.info-cards{
+    background-color: #2E77D0;
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
+    font-weight:700;
+    font-size: 0.9em;
+    text-align: center;
+    width: 90%;
+    display: flex;
+    align-self: center;
+}
+.info-cards-2{
+    background-color:white;
+    padding: 5px;
+    border:1px solid #2E77D0;
+    border-radius: 4px;
+    color:#2E77D0;
+    font-weight:700;
+    font-size: 0.9em;
+    text-align: center;
+    width: 90%px;
+    display: flex;
+    align-self: center;
+}
+.card-subtitle-style{
+    color: black;
+    font-weight:600;
+}
+hr{
+    background-color: gray;
+    font-weight: bold;
+    
+}
+.btn-cards{
+    background:#191414;
+    padding: 12px 50px;
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 200px;
+}
+.btn-cards:hover{
+    background:black;
+    padding: 12px 50px;
+    border-radius: 500px;
+    padding: 16px 54px;
+}
+a.btn.btn-outline.btn-cards{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: center;
+}
+.termos-cards{
+    color:#535353;
+    font-size: 0.8em;
+}
+.termos-cards a{
+    color: #1ED760;
+}
+
+footer{
+    background: black;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+footer h4{
+    color:#919496;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+footer .navbar-nav a{
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+footer .navbar-nav a:hover{
+    color: #1ED760;
+    font-size: 1em;
+    text-decoration:none;
+    font-weight: bold;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    float: right;
+    margin: 0px 10px;
+}
+
+footer ul li a{
+    font-size: 40px;
+    color: white;
+}
+.info-rodape{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+.info-rodape a{
+    text-decoration: none;
+    color: white;
+}
+.info-rodape a:hover{
+    color: #1ED760;
 }
 
 /*MEDIA QUERIES*/
@@ -146,13 +264,28 @@ h3{
         font-weight: bold;
         color: black;
         font-size: 1.5em;
-        margin-top: 20px;
+        margin-top: 30px;
         margin-bottom: 10px;
     }
     button.navbar-toggler{
         margin-right: 20px;
     }
     .style-h3{
+        font-size: 1.3em;
+    }
+    .subtitulo p{
+        font-size: 1.3em;
+    }
+    .info-cards{
+        font-size: 1.2em;
+    }
+    .info-cards-2{
+        font-size: 1.2em;
+    }
+    .card-subtitle-style{
+        font-size: 1.1em;
+    }
+    .termos-cards{
         font-size: 1em;
     }
     #cartoes{
@@ -194,5 +327,39 @@ h3{
     }
     #cartoes ul li{
         margin: 10px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .cards-telas-medias{
+        display:flex;
+        min-width:760px;
+        max-width:990px;
+        flex-wrap: wrap;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    h1{
+        font-size: 6em;
+    }
+    .style-h3{
+        font-size: 1.5em;
+    }
+    .subtitulo p{
+        font-size: 1.3em;
+    }
+    .info-cards{
+        font-size: 0.9em;
+    }
+    .info-cards-2{
+        font-size: 0.9em;
+    }
+    .card-subtitle-style{
+        font-size: 1em;
+    }
+    .termos-cards{
+        font-size: 1em;
     }
 }
