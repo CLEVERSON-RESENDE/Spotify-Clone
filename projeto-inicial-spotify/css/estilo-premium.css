@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+nav.navbar-transparente{
+    padding: 15px 0px;
+    background-color: black;
+}
+.navbar-light .navbar-nav .nav-link{
+    color:white;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#1ED760;
+}
+.navbar-light .navbar-toggler{
+   color: rgba(255,255,255,.5);
+   border-color:rgba(255,255,255,.1);
+}
+
+.divisor{
+    width: 1px;
+    background: white;
+    margin: 12px 15px;
+}
+.conteudo-principal-body{
+    text-align: center;
+}
+.background-home{
+    background-color:#FAC95C;
+    height: 450px;
+}
+.style-h1{
+    font-weight: bold;
+    color: black;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+.style-h3{
+    color: black;
+    font-weight:400;
+    font-size: 1.5em;
+}
+.btn-custom{
+    color:white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+.btn-black{
+    background-color: rgb(26, 25, 25);
+    padding:8px 40px 8px 40px;
+}
+.btn-black:hover{
+    background-color: black;
+    color: white;
+}
+.btn-bege{
+    background-color:#FAC95C;
+    padding: 8px 40px 8px 40px;
+    color: black;
+}
+.btn-bege:hover{
+    background-color:#FBD175;
+    padding: 8px 40px 8px 40px;
+    color: black;
+}
+.title-premium{
+    font-weight: bold;
+    font-size: 3em;
+    color: black;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.title-premium-2{
+    font-weight: bold;
+    font-size: 2.5em;
+    color: black;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+h3{
+    color: black;
+    font-size: 1.5em;
+}
+.background-cards{
+    background-color: #EFEFEF;
+    height: 500px;
+    margin-top: 50px;
+}
+.subtitulo p{
+    font-weight:500;
+    color: black;
+    text-align: center;
+}
+#cartoes{
+    display: flex;
+    justify-content: center;
+}
+#cartoes ul li{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+/*MEDIA QUERIES*/
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media(max-width: 575.98px)
+{
+    .btn-custom
+    {
+        margin: 10px 15px;
+        font-size: 1em;
+    }
+    ul li
+    {
+        margin-left: 15px;
+    }
+    hr
+    {
+        background-color: white;
+        width: 50px;
+        margin-bottom: 20px;
+    }
+    ul li a#navbar-phone-top
+    {
+        margin-top: 20px;
+    }
+    #logo-phone
+    {
+        margin-left: 15px;
+    }
+    .background-color{
+        background-color:#FAC95C;
+        height: 600px;
+        width: 100%;
+    }
+    .style-h1{
+        font-weight: bold;
+        color: black;
+        font-size: 1.5em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    button.navbar-toggler{
+        margin-right: 20px;
+    }
+    .style-h3{
+        font-size: 1em;
+    }
+    #cartoes{
+        margin-top: 10px;
+    }
+    #cartoes ul li{
+        margin: 10px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .style-h1{
+        font-weight: bold;
+        color: black;
+        font-size: 2.5em;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .btn-custom{
+        margin: 10px 15px;
+    }
+    ul li{
+        margin-left: -20px;
+    }
+    hr{
+        background-color: white;
+        width: 50px;
+        margin-bottom: 20px;
+    }
+    ul li a#navbar-phone-top{
+        margin-top: 20px;
+    }
+    #logo-phone{
+        margin-left: -20px;
+    }
+    #cartoes{
+        margin-top: 10px;
+    }
+    #cartoes ul li{
+        margin: 10px;
+    }
+}
